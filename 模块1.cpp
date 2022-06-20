@@ -1,3 +1,4 @@
+// å†…å®¹åŠ è½½æ¨¡å—(å±å±±ä»£ç ...)
 #include<iostream>
 #include<windows.h>
 #include<stdlib.h>
@@ -7,21 +8,30 @@ int main(){
 	while(1){
 		system("cls");
 		Sleep(100);
-		cout<<"¼Ó";
+		cout<<"åŠ ";
 		Sleep(100);
-		cout<<"ÔØ";
+		cout<<"è½½";
 		Sleep(100);
-		cout<<"ÖĞ";
-		Sleep(100);
-		cout<<".";
+		cout<<"ä¸­";
 		Sleep(100);
 		cout<<".";
 		Sleep(100);
 		cout<<".";
+		Sleep(100);
+		cout<<"."<<endl;
+		if(time == 0){
+			cout<<"[           0%           ]";
+		} else if(time == 1){
+			cout<<"[|||||||||  39%          ]";
+		} else if(time == 2){
+			cout<<"[|||||||||||68%||        ]";
+		} else{
+			cout<<"[|||||||||||76%||||||    ]";
+		}
 		Sleep(1000);
 		time++;
 		system("cls");
-		cout<<"¼ÓÔØÖĞ";
+		cout<<"åŠ è½½ä¸­";
 		Sleep(100);
 		cout<<".";
 		Sleep(100);
@@ -30,21 +40,24 @@ int main(){
 		cout<<".";
 		Sleep(100);
 		if(time == 3){
+			cout<<endl<<"[||||||||||100%||||||||||]";
+			Sleep(2000);
 			system("cls");
-			cout<<"¼ÓÔØ";
+			Sleep(100);
+			cout<<"åŠ è½½";
 			Sleep(100);
 			system("cls");
-			cout<<"¼Ó";
+			cout<<"åŠ ";
 			Sleep(100);
 			system("cls");
 			Sleep(200);
-			cout<<"¼Ó";
+			cout<<"åŠ ";
 			Sleep(100);
-			cout<<"ÔØ";
+			cout<<"è½½";
 			Sleep(100);
-			cout<<"³É";
+			cout<<"æˆ";
 			Sleep(100);
-			cout<<"¹¦";
+			cout<<"åŠŸ";
 			Sleep(100);
 			cout<<"!";
 			break;
